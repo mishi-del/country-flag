@@ -1,5 +1,5 @@
 import React from "react";
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import { RootLayout } from "./ui/RootLayout.jsx";
 import { HomePage } from "./pages/HomePage.jsx";
 import { CountryDetailPage } from "./pages/CountryDetailPage.jsx";
@@ -7,7 +7,7 @@ import { ErrorPage } from "./pages/ErrorPage.jsx";
 import { NotFoundPage } from "./pages/NotFoundPage.jsx";
 import { countryDetailsLoader, countriesLoader } from "./services/loaders.js";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     element: <RootLayout />,
